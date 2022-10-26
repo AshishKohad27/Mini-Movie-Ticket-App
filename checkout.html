@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout</title>
+</head>
+<style>
+  body {
+    background-color: #141927;
+    color: white;
+    font-family: sans-serif;
+  }
+
+  #navbar {
+    background-color: #1B2033;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    display: flex;
+    justify-content: space-between;
+    width: 95vw;
+    border: 2px solid white;
+    margin: auto;
+    border-radius: 20px;
+
+  }
+
+  #navbar>h1:first-child {
+    padding-left: 20px;
+  }
+
+  #navbar>h1:last-child {
+    padding-right: 40px;
+  }
+
+  #user-detail {
+    box-shadow: rgba(231, 224, 224, 0.25) 0px 54px 55px, rgba(228, 222, 222, 0.12) 0px -12px 30px, rgba(226, 226, 226, 0.12) 0px 4px 6px, rgba(223, 220, 220, 0.17) 0px 12px 13px, rgba(201, 197, 197, 0.09) 0px -3px 5px;
+    background-color: #1B2033;
+    width: 800px;
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+    border: 3px solid gold;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #user-detail>input,
+  #confirm {
+    width: 200px;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 0px;
+    font-weight: bold;
+  }
+
+  #confirm:hover {
+    background-color: gold;
+    /* margin-top: 26px; */
+    width: 250px;
+    padding: 5px 15px;
+    color: white;
+  }
+
+  #movie {
+    width: 340px;
+    background-color: #1B2033;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    border-top-left-radius: 80px;
+    border: 2px solid gold;
+  }
+
+  #movie>div>p {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: white;
+    width: 280px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-top-left-radius: 60px;
+    color: black;
+  }
+
+  #movie>div>img {
+    width: 300px;
+    height: 350px;
+    border: 5px solid white;
+  }
+</style>
+
+<body>
+  <div id="navbar">
+    <h1>Checkout | Cost: 100/seat</h1>
+    <!-- Display the wallet amount here inside h1 tag with id as "wallet". Note only amount, no extra text. Like 500 not Rs 500 -->
+    <h1 id="wallet">0</h1>
+  </div>
+  <div id="user-detail">
+    <!-- input field to accept user name with id as "user_name"  -->
+    <input type="text" placeholder="Enter your Name" id="user_name">
+    <!-- input field to accept number of seats with id as "number_of_seats"  -->
+    <input type="number" placeholder="Number OF Seats" id="number_of_seats">
+    <!-- A submit button to confirm booking with id as "confirm"  -->
+    <button id="confirm">Confirm</button>
+  </div>
+
+  <div id="movie">
+    <!-- Append the selected movie for booking here -->
+    <!-- movie should have title and image  -->
+    <!-- It should be the same movie you selected for booking  -->
+  </div>
+</body>
+
+</html>
+<script src="./scripts/checkout.js"></script>
